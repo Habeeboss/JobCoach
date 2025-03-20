@@ -1,6 +1,6 @@
 #  - AI Powered Job Coaching Assitant
 
-`KeyInsight` is an Azure AI powered tool that brings chatbots to the next level of sophistication and intelligence. `KeyInsight` can engage in multi-turn conversations, remembering previous interactions and providing relevant follow-up responses.
+`SupportEdge` is an Azure AI powered tool that brings chatbots to the next level of sophistication and intelligence. `SupportEdge` can engage in multi-turn conversations, remembering previous interactions and providing relevant follow-up responses.
 
 <!-- ## 📸Preview
 
@@ -29,7 +29,7 @@
 
 ## 🤖Technologies Used
 
-`KeyInsight` is built using the following technologies:
+`SupportEdge` is built using the following technologies:
 
 - `React.js`: A JavaScript library for building user interfaces.
 - `CSS Modules`: A CSS file format that allows for local scoping of CSS styles in React components.
@@ -53,7 +53,7 @@ Before getting started, make sure you have the following prerequisites installed
 
 ## 💻Getting Started
 
-To run the `KeyInsight` locally, follow these steps:
+To run the `SupportEdge` locally, follow these steps:
 
 1. Clone the repository: `https://github.com/Habeeboss/JobCoach.git`
 2. Navigate to the project directory: `cd JobCoach`
@@ -81,7 +81,7 @@ To run the `KeyInsight` locally, follow these steps:
 
 ## ✨Credits
 
-`KeyInsight` is developed and maintained by `Bharath and Habeeb` as part of Microsoft Global Innovation Challenge. Acknowledgements and credits to Azure AI API Developers and Devesh and Kanika for the work.
+`SupportEdge` is developed and maintained by `Bharath and Habeeb` as part of Microsoft Global Innovation Challenge. Acknowledgements and credits to Azure AI API Developers and Devesh and Kanika for the work.
 
 ## 📧Contacts
 

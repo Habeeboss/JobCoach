@@ -30,7 +30,7 @@ const Navbar = () => {
       <nav className="navbar" onClick={(e) => e.stopPropagation()}>
         <div className="nav-container">
           <Link to="/home" className="nav-logo">
-            Key Insight
+            Support Edge
             {/* <FontAwesomeIcon icon={Icons.fax} size="6px" /> */}
           </Link>
           <ul className={click ? "nav-menu active" : "nav-menu"}>

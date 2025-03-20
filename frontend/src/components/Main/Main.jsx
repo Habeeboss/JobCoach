@@ -19,9 +19,9 @@ const Main = () => {
           <div className={styles.text}>
             <h1 className={styles.cardTitle}>Azure AI Powered</h1>
             <p>
-            Key Insight is an Azure AI-powered job coaching assistant built on Azure OpenAI’s GPT-4 model. 
+            Support Edge is an Azure AI-powered job coaching assistant built on Azure OpenAI’s GPT-4 model. 
             It leverages advanced natural language processing (NLP) and contextual understanding to deliver intelligent, human-like conversations. 
-            With a vast knowledge base and AI-driven job matching, Key Insight provides personalized career guidance, job recommendations, 
+            With a vast knowledge base and AI-driven job matching, Support Edge provides personalized career guidance, job recommendations, 
             and coaching support to help job seekers achieve their career goals. Its enhanced language generation capabilities enable it to offer detailed, 
             nuanced responses, making it a powerful tool for both job seekers and coaches.
             </p>
@@ -34,9 +34,9 @@ const Main = () => {
           <div className={styles.text}>
             <h1 className={styles.cardTitle}>Job Matching AI</h1>
             <p>
-             KeyInsight is an AI-powered job matching chatbot designed to facilitate interactive and dynamic career coaching conversations. 
+             SupportEdge is an AI-powered job matching chatbot designed to facilitate interactive and dynamic career coaching conversations. 
              It leverages advanced natural language understanding and generation to provide accurate, context-aware responses to user queries. 
-             KeyInsight offers personalized job recommendations, career advice, and coaching support with a high level of response consistency 
+             SupportEdge offers personalized job recommendations, career advice, and coaching support with a high level of response consistency 
              and reduced randomness, ensuring reliable and meaningful interactions for job seekers and coaches alike.
             </p>
           </div>
@@ -48,7 +48,7 @@ const Main = () => {
           <div className={styles.text}>
             <h1 className={styles.cardTitle}>Responsive & Clean UI</h1>
             <p>
-              KeyInsight features a clean, responsive, and accessible user interface (UI) designed for a seamless and intuitive user experience. 
+              SupportEdge features a clean, responsive, and accessible user interface (UI) designed for a seamless and intuitive user experience. 
               The UI ensures effortless interaction with the chatbot, adapting smoothly to different screen sizes and devices for a consistent experience 
               across platforms. Additionally, accessibility settings are integrated, including text-to-speech support, keyboard navigation, screen reader 
               compatibility, and customizable contrast options, making it inclusive for users with disabilities.

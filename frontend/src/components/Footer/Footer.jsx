@@ -13,7 +13,7 @@ const Footer = () => {
     <div className={styles.container}>
       <div className={styles.header}>
         <p>
-          Copyright © 2025 KeyInsight. Designed By{" "}
+          Copyright © 2025 SupportEdge. Designed By{" "}
           <a href="https://www.linkedin.com/in/bharathkumarsampath/">Bharath Kumar Sampath</a>
         </p>
       </div>
