@@ -2,7 +2,7 @@
 
 `KeyInsight` is an Azure AI powered tool that brings chatbots to the next level of sophistication and intelligence. `KeyInsight` can engage in multi-turn conversations, remembering previous interactions and providing relevant follow-up responses.
 
-## 📸Preview
+<!-- ## 📸Preview
 
 ### SignUp Page
 <img src="./frontend/src/assets/SignUpPreview.png" alt="signup">
@@ -14,7 +14,7 @@
 <img src="./frontend/src/assets/HomePreview.png" alt="Home">
 
 ### ChatBot UI
-<img src="./frontend/src/assets/ChatBoxPreview.png" alt="chatbot">
+<img src="./frontend/src/assets/ChatBoxPreview.png" alt="chatbot"> -->
 
 
 ## ✨Features
@@ -55,8 +55,8 @@ Before getting started, make sure you have the following prerequisites installed
 
 To run the `KeyInsight` locally, follow these steps:
 
-1. Clone the repository: `https://github.com/its-kumar-yash/react-ai-chatbot-app.git`
-2. Navigate to the project directory: `cd react-ai-chatbot-app`
+1. Clone the repository: `https://github.com/Habeeboss/JobCoach.git`
+2. Navigate to the project directory: `cd JobCoach`
 3. Install the dependencies: `npm install`
 4. Create a `.env` file in the backend folder and add your Azure AI API key:
    ```bash
@@ -76,12 +76,12 @@ To run the `KeyInsight` locally, follow these steps:
 
 ## 📑Resources
 
-- [AzureAI API documentation](https://platform.openai.com/docs/introduction)
+- [AzureAI API documentation](https://learn.microsoft.com/en-us/azure/ai-services/reference/rest-api-resources)
 - [Firebase documentation](https://firebase.google.com/docs)
 
 ## ✨Credits
 
-`KeyInsight` is developed and maintained by `Bharath and Habeeb` as part of Microsoft Global Innovation Challenge. Acknowledgements and credits to Azure AI API Developers and Devesh and Kanika for the [design](https://dribbble.com/shots/20478647-RoboReply-Chatbot-Landing-Page) inspiration.
+`KeyInsight` is developed and maintained by `Bharath and Habeeb` as part of Microsoft Global Innovation Challenge. Acknowledgements and credits to Azure AI API Developers and Devesh and Kanika for the work.
 
 ## 📧Contacts
 

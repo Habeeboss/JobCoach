@@ -8,7 +8,7 @@ const AppProvider = ({ children }) => {
   const [messages, setMessages] = useState([
     {
       from: "ai",
-      text: "Hi there! I'm you Job Coaching assistant, I'm here to help you out with your Job Matching. Ask share me deails of the job you are looking for.",
+      text: "Hi there! I'm your Job Coaching assistant, I'm here to help you out with your Job Matching. Share me details of your profile and the kind job you are looking for.",
     },
   ]);
   const [processing, setProcessing] = useState(false);

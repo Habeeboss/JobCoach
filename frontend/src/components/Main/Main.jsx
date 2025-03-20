@@ -19,14 +19,11 @@ const Main = () => {
           <div className={styles.text}>
             <h1 className={styles.cardTitle}>Azure AI Powered</h1>
             <p>
-              Key Insight is a Azure AI powered chat bot based on
-              text-davinci-003 that leverages the capabilities of GPT-3,
-              specifically the Davinci variant. With a vast knowledge base,
-              contextual understanding, and natural language processing
-              capabilities, this chatbot excels at engaging in human-like
-              conversations. The text-davinci-003 model offers enhanced language
-              generation abilities, enabling it to provide more detailed and
-              nuanced responses.
+            Key Insight is an Azure AI-powered job coaching assistant built on Azure OpenAI’s GPT-4 model. 
+            It leverages advanced natural language processing (NLP) and contextual understanding to deliver intelligent, human-like conversations. 
+            With a vast knowledge base and AI-driven job matching, Key Insight provides personalized career guidance, job recommendations, 
+            and coaching support to help job seekers achieve their career goals. Its enhanced language generation capabilities enable it to offer detailed, 
+            nuanced responses, making it a powerful tool for both job seekers and coaches.
             </p>
           </div>
         </div>
@@ -37,12 +34,10 @@ const Main = () => {
           <div className={styles.text}>
             <h1 className={styles.cardTitle}>Job Matching AI</h1>
             <p>
-              KeyInsight is a Job Matching AI chatbot designed to engage in
-              dynamic and interactive conversations. It exhibits exceptional
-              natural language understanding and generation capabilities,
-              enabling it to respond to user queries, hold meaningful
-              discussions, and provide valuable information. Moreover, provides
-              a refined level of response consistency with reduced randomness.
+             KeyInsight is an AI-powered job matching chatbot designed to facilitate interactive and dynamic career coaching conversations. 
+             It leverages advanced natural language understanding and generation to provide accurate, context-aware responses to user queries. 
+             KeyInsight offers personalized job recommendations, career advice, and coaching support with a high level of response consistency 
+             and reduced randomness, ensuring reliable and meaningful interactions for job seekers and coaches alike.
             </p>
           </div>
         </div>
@@ -53,12 +48,10 @@ const Main = () => {
           <div className={styles.text}>
             <h1 className={styles.cardTitle}>Responsive & Clean UI</h1>
             <p>
-              Key Insight is also accompanied by a clean and responsive user
-              interface(UI). The UI is designed to provide a seamless and
-              intuitive user experience, allowing users to interact with the
-              chatbot effortlessly. The responsive nature of the UI ensures that
-              the chatbot adapts well to different screen sizes and devices,
-              providing a consistent experience across platforms.
+              KeyInsight features a clean, responsive, and accessible user interface (UI) designed for a seamless and intuitive user experience. 
+              The UI ensures effortless interaction with the chatbot, adapting smoothly to different screen sizes and devices for a consistent experience 
+              across platforms. Additionally, accessibility settings are integrated, including text-to-speech support, keyboard navigation, screen reader 
+              compatibility, and customizable contrast options, making it inclusive for users with disabilities.
             </p>
           </div>
         </div>
