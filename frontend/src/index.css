@@ -3,3 +3,21 @@
 body {
   margin: 0;
 }
+
+@font-face {
+  font-family: "Dyslexie";
+  src: url("../public/OpenDyslexicAlta-Bold.woff") format("woff"),
+       url("../public/OpenDyslexicAlta-Bold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Default font for the entire website */
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Change all fonts when dyslexie mode is enabled */
+body.dyslexie, body.dyslexie * {
+  font-family: "Dyslexie", sans-serif !important;
+}

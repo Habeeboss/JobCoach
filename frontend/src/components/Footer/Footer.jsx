@@ -6,6 +6,7 @@ import {
   faInstagram,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
+import DyslexieToggle from "../Dyslexie/Dyslexie";
 
 const Footer = () => {
   return (
@@ -27,6 +28,7 @@ const Footer = () => {
           <FontAwesomeIcon icon={faLinkedin} />
         </a>
       </div>
+      <DyslexieToggle/>
     </div>
   );
 };
