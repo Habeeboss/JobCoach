@@ -14,7 +14,7 @@ const AppProvider = ({ children }) => {
   const [processing, setProcessing] = useState(false);
 
   const handleSubmission = async () => {
-    if (!messageText.trim() || processing) return;
+    if (!messageText?.trim() || processing) return;
 
     const tempMessages = [
       ...messages,
@@ -27,15 +27,18 @@ const AppProvider = ({ children }) => {
     setMessages(tempMessages);
     setMessageText("");
 
-    setTimeout(() =>
-      lastMsg.current.scrollIntoView({
-        behavior: "smooth",
-      })
-    );
+    setTimeout(() => {
+      if (lastMsg.current) {
+        lastMsg.current.scrollIntoView({
+          behavior: "smooth",
+        });
+      }
+    }, 100);
 
     try {
       setProcessing(true);
-      const res = await fetch(`http://localhost:5500`, {
+      console.log("Sending API request to:", "http://localhost:5500");
+      const res = await fetch(`http://127.0.0.1:5500`, {
         method: "POST",
         headers: {
           "content-type": "application/json",
@@ -45,6 +48,8 @@ const AppProvider = ({ children }) => {
         }),
       });
       setProcessing(false);
+
+      if (!res.ok) throw new Error("Failed to fetch response from server.");
 
       const data = await res.json();
       // console.log(data);
@@ -68,11 +73,13 @@ const AppProvider = ({ children }) => {
       ]);
     }
 
-    setTimeout(() =>
-      lastMsg.current.scrollIntoView({
-        behavior: "smooth",
-      })
-    );
+    setTimeout(() => {
+      if (lastMsg.current) {
+        lastMsg.current.scrollIntoView({
+          behavior: "smooth",
+        });
+      }
+    }, 100);
   };
 
   return (
