@@ -18,41 +18,11 @@ console.log("ENV CHECK", {
   deployment: process.env.OPENAI_ENGINE
 });
 
-const openai = new AzureOpenAI({ 
-                                 apiVersion: process.env.OPENAI_API_VERSION,
+const openai = new AzureOpenAI({ apiVersion: process.env.OPENAI_API_VERSION,
                                  apiKey: process.env.AZURE_OPENAI_API_KEY,
                                  endpoint: process.env.AZURE_OPENAI_ENDPOINT, 
                                  defaultDeployment: process.env.OPENAI_ENGINE, // the deployment name in Azure
                                    });
-
-
-
-async function main() {
-  console.log('Non-streaming:');
-  const result = await openai.chat.completions.create({
-    model: deployment,
-    messages: [{ role: 'user', content: 'Say hello!' }],
-  });
-  console.log(result.choices[0]?.message?.content);
-
-  console.log();
-  console.log('Streaming:');
-  const stream = await openai.chat.completions.create({
-    model: deployment,
-    messages: [{ role: 'user', content: 'Say hello!' }],
-    stream: true,
-  });
-
-  for await (const part of stream) {
-    process.stdout.write(part.choices[0]?.delta?.content ?? '');
-  }
-  process.stdout.write('\n');
-}
-
-main().catch((err) => {
-  console.error(err);
-  process.exit(1);
-});
 
 dotenv.config();
 
@@ -60,10 +30,6 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const azureAI = process.env.AZURE_OPENAI_KEY;  // Load API Key from .env
-const azureEndpoint = process.env.AZURE_OPENAI_ENDPOINT; // Load Azure Endpoint
-const azureApiVersion = process.env.OPENAI_API_VERSION; // Load Azure Endpoint
-const DEPLOYMENT_NAME = process.env.OPENAI_ENGINE
 
 app.get("/", async (req, res) => {
   res.status(200).send({
@@ -85,11 +51,6 @@ app.post("/", async (req, res) => {
     .join("\n") +
   "\nAI: ";
 
-  // const reqUrl =  `${azureEndpoint}/openai/chat/completions?api-version=${azureApiVersion}`;
-  const url = `${azureEndpoint}/openai/deployments/gpt-4-2/chat/completions?api-version=${azureApiVersion}`;
-
-
-
   const reqBody = {
     model: process.env.OPENAI_ENGINE,
     prompt: requiredPrompt,
@@ -97,17 +58,15 @@ app.post("/", async (req, res) => {
     temperature: 0.6,
   };
 
-  console.log(url)
   try {
-    const response = await axios.post(url, reqBody, {
-      headers: {
-        "Content-Type": "application/json",
-        'Authorization': `Bearer ${azureAI}`// Use Azure OpenAI API key
-      },
+    const response = await openai.chat.completions.create({
+      model: deployment,
+      messages: [{ role: 'user', content: requiredPrompt }],
     });
+    console.log(response.choices[0]?.message?.content);
 
-    const data = response.data;
-    const answer = Array.isArray(data.choices) ? data.choices[0]?.text : "";
+    const data = response;
+    const answer = Array.isArray(data.choices) ? data.choices[0]?.message?.content : "";
 
     res.status(200).json({
       success: true,
